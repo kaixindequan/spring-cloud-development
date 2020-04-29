@@ -1,0 +1,18 @@
+feign:
+  hystrix:
+    enabled: true
+  client:
+    config:
+      # 作用于所有的feign
+      default:
+        # 连接超时时间
+        connectTimeout: 5000
+        # 读超时时间
+        readTimeout: 5000
+  compression:
+    request:
+      enabled: true
+      mime-types: text/xml, application/xml, application/json
+      min-request-size: 2048
+    response:
+      enabled: true
