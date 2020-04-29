@@ -12,6 +12,8 @@ spring:
           uri: lb://mall-user-service
           predicates:
             - Path=/api/user/**
+          filters:
+            - StripPrefix=2
 logging:
   level:
     org.springframework.cloud.gateway: debug
