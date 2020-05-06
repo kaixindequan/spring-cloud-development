@@ -6,9 +6,9 @@ feign:
       # 作用于所有的feign
       default:
         # 连接超时时间
-        connectTimeout: 5000
+        connectTimeout: 15000
         # 读超时时间
-        readTimeout: 5000
+        readTimeout: 15000
   compression:
     request:
       enabled: true
