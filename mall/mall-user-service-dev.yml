@@ -52,9 +52,3 @@ spring:
           statement-create-after-log-enabled: false
           statement-parameter-set-log-enabled: false
           statement-prepare-after-log-enabled: false
-
-  zipkin:
-    base-url: http://localhost:9411/
-  sleuth:
-    sampler:
-      probability: 1.0
