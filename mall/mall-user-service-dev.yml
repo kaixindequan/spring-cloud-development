@@ -52,3 +52,14 @@ spring:
           statement-create-after-log-enabled: false
           statement-parameter-set-log-enabled: false
           statement-prepare-after-log-enabled: false
+
+mybatis-plus:
+  mapper-locations: classpath*:mapper/*Mapper.xml
+  type-aliases-package: com.example.mall.user.model
+  global-config:
+    db-config:
+      id-type: id_worker
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
